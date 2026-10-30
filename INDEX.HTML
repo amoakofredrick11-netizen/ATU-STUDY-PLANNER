@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>📚 Study Planner</h1>
+            <p class="subtitle">Organize your IT coursework and assignments</p>
+        </header>
+
+        <!-- Task Input Form -->
+        <form id="task-form">
+            <div class="input-group">
+                <input type="text" id="task-title" placeholder="Task Title (e.g., C++ Assignment)" required>
+                <input type="text" id="task-subject" placeholder="Subject (e.g., DIT 109)">
+                <select id="task-priority">
+                    <option value="Low">Low Priority</option>
+                    <option value="Medium" selected>Medium Priority</option>
+                    <option value="High">High Priority</option>
+                </select>
+            </div>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <!-- Empty State Message -->
+        <div id="empty-state" class="empty-state">
+            <p>📝 Your study list is empty. Add a task above to get started!</p>
+        </div>
+
+        <!-- Task List Container -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
